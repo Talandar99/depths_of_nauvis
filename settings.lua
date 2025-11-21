@@ -1,0 +1,23 @@
+data:extend({
+	{
+		type = "bool-setting",
+		name = "deep-sea-mechanic",
+		setting_type = "startup",
+		default_value = true,
+		order = "depths-of-nauvis-a",
+	},
+	{
+		type = "bool-setting",
+		name = "generate-oil-only-on-water",
+		setting_type = "startup",
+		default_value = true,
+		order = "depths-of-nauvis-b",
+	},
+	{
+		type = "bool-setting",
+		name = "generate-uranium-only-on-water",
+		setting_type = "startup",
+		default_value = true,
+		order = "depths-of-nauvis-b",
+	},
+})

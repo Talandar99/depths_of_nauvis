@@ -1,0 +1,12 @@
+{
+    "name": "depths_of_nauvis",
+    "version": "0.1.1",
+    "title": "Depths of Nauvis",
+    "author": "Talandar",
+    "dependencies": [
+        "base >= 2.0",
+        "cargo-ships"
+    ],
+    "description": "Mod that changes Nauvis terrain and resource generation, to be more ship oriented",
+    "factorio_version": "2.0"
+}
