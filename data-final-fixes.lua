@@ -41,3 +41,28 @@ mgs.autoplace_settings["entity"].settings["uranium-sludge"] = mgs.autoplace_sett
 	or {}
 
 planet.map_gen_settings = mgs
+-- block elevated-rails
+if settings.startup["block-elevated-rails-on-deep-sea"].value then
+	if mods["elevated-rails"] then
+		data:extend({
+			{
+				type = "collision-layer",
+				name = "no-elevated-rail-on-deepwater",
+			},
+		})
+		data.raw["utility-constants"].default.default_collision_masks["rail-support"].layers["no-elevated-rail-on-deepwater"] =
+			true
+		-- Add this collision layer to the "pelagos-deepsea" tile
+		local deepsea = data.raw.tile["deepwater"]
+		if deepsea then
+			-- Ensure the tile has a proper collision_mask structure
+			if not deepsea.collision_mask then
+				deepsea.collision_mask = { layers = {} }
+			elseif not deepsea.collision_mask.layers then
+				deepsea.collision_mask = { layers = deepsea.collision_mask }
+			end
+
+			deepsea.collision_mask.layers["no-elevated-rail-on-deepwater"] = true
+		end
+	end
+end

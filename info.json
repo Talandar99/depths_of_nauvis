@@ -1,10 +1,11 @@
 {
     "name": "depths_of_nauvis",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "title": "Depths of Nauvis",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.0",
+        "? elevated-rails",
         "cargo-ships"
     ],
     "description": "Mod that changes Nauvis terrain and resource generation, to be more ship oriented",
