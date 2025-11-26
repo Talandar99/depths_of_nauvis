@@ -47,11 +47,10 @@ if settings.startup["block-elevated-rails-on-deep-sea"].value then
 		data:extend({
 			{
 				type = "collision-layer",
-				name = "no-elevated-rail-on-deepwater",
+				name = "deepsea_mechanic",
 			},
 		})
-		data.raw["utility-constants"].default.default_collision_masks["rail-support"].layers["no-elevated-rail-on-deepwater"] =
-			true
+		data.raw["utility-constants"].default.default_collision_masks["rail-support"].layers["deepsea_mechanic"] = true
 		-- Add this collision layer to the "pelagos-deepsea" tile
 		local deepsea = data.raw.tile["deepwater"]
 		if deepsea then
@@ -62,7 +61,7 @@ if settings.startup["block-elevated-rails-on-deep-sea"].value then
 				deepsea.collision_mask = { layers = deepsea.collision_mask }
 			end
 
-			deepsea.collision_mask.layers["no-elevated-rail-on-deepwater"] = true
+			deepsea.collision_mask.layers["deepsea_mechanic"] = true
 		end
 	end
 end
