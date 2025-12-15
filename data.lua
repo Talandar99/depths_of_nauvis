@@ -138,29 +138,6 @@ data:extend({
 	},
 })
 
-local tech = data.raw.technology["uranium-mining"]
-if tech and tech.effects then
-	table.insert(tech.effects, {
-		type = "unlock-recipe",
-		recipe = "uranium-sludge-processing",
-	})
-end
-
--- increase efficiency of ships to make sure they won't die randomly
-local ship = data.raw["locomotive"]["cargo_ship_engine"]
-ship.energy_source = ship.energy_source or {}
---ship.energy_source.effectivity = 1
-ship.energy_source.effectivity = 1.5
-ship.energy_source.fuel_inventory_size = 10
-
--- remove filter from oil rig in order to allow uranium mining
-local generator = data.raw["generator"]["or_power_electric"]
-if generator and generator.fluid_box then
-	generator.fluid_box.filter = nil
-	-- increase effectivity to make sure oil rig won't die randomly while mining uranium sludge
-	generator.effectivity = 5000
-end
-
 if settings.startup["deep-sea-mechanic"].value then
 	local landfill = data.raw.item["landfill"]
 

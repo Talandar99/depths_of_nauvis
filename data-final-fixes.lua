@@ -65,3 +65,21 @@ if settings.startup["block-elevated-rails-on-deep-sea"].value then
 		end
 	end
 end
+
+local tech = data.raw.technology["uranium-mining"]
+if tech and tech.effects then
+	table.insert(tech.effects, {
+		type = "unlock-recipe",
+		recipe = "uranium-sludge-processing",
+	})
+end
+
+if mods["bztitanium"] then
+	local tech = data.raw.technology["fluid-mining"]
+	if tech and tech.effects then
+		table.insert(tech.effects, {
+			type = "unlock-recipe",
+			recipe = "uranium-sludge-processing",
+		})
+	end
+end
