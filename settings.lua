@@ -17,7 +17,7 @@ data:extend({
 		type = "bool-setting",
 		name = "generate-oil-only-on-water",
 		setting_type = "startup",
-		default_value = true,
+		default_value = false,
 		order = "depths-of-nauvis-c",
 	},
 	{

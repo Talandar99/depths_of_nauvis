@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+Date: 2025-12-15
+  Changelog:
+    - by default oil now generate on land and sea
+---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 2025-12-15
   Changelog:
-    - with Pealgos installed and without Any Planet Start installed you will always have oil patches on ground to prevent progression locking  
+    - with Pelagos installed and without Any Planet Start installed you will always have oil patches on ground to prevent progression locking  
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 2025-12-13
