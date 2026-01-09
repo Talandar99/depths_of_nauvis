@@ -1,12 +1,13 @@
 {
     "name": "depths_of_nauvis",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "title": "Depths of Nauvis",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.0",
         "? elevated-rails",
         "? bztitanium",
+        "(?) Krastorio2-spaced-out",
         "talandar_cargo_ships_tweaks",
         "cargo-ships"
     ],

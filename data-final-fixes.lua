@@ -74,6 +74,16 @@ if tech and tech.effects then
 	})
 end
 
+if mods["Krastorio2-spaced-out"] then
+	local tech = data.raw.technology["uranium-processing"]
+	if tech and tech.effects then
+		table.insert(tech.effects, {
+			type = "unlock-recipe",
+			recipe = "uranium-sludge-processing",
+		})
+	end
+end
+
 if mods["bztitanium"] then
 	local tech = data.raw.technology["fluid-mining"]
 	if tech and tech.effects then

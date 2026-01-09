@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.1
+Date: 2026-01-09
+    Bugfixes:
+    - uranium sludge processing should now be present in uranium processing if Krastorio 2 Spaced Out Is installed
+---------------------------------------------------------------------------------------------------
 Version: 0.7.0
 Date: 2025-12-15
   Changelog:
