@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.0
+Date: 2026-01-14
+  Changelog:
+    - added ru locale. Thanks YunaKosha!
+    - added Krastorio 2 and Krastorio 2 Spaced out compatibility.
+      If one of these mods is installed you can mine new resource: Mineral sludge. 
+      This resource can be filtered into mineral water. 
+    - Mineral sludge should also spawn on new chunks in existing saves.
+---------------------------------------------------------------------------------------------------
 Version: 0.7.1
 Date: 2026-01-09
     Bugfixes:

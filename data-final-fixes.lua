@@ -40,6 +40,21 @@ mgs.autoplace_settings["entity"] = mgs.autoplace_settings["entity"] or { setting
 mgs.autoplace_settings["entity"].settings["uranium-sludge"] = mgs.autoplace_settings["entity"].settings["uranium-sludge"]
 	or {}
 
+if mods["Krastorio2-spaced-out"] or mods["Krastorio2"] then
+	mgs.autoplace_controls = mgs.autoplace_controls or {}
+	mgs.autoplace_controls["mineral-sludge"] = mgs.autoplace_controls["mineral-sludge"]
+		or {
+			frequency = 3,
+			size = 1.2,
+			richness = 2,
+			starting_area = false,
+		}
+
+	mgs.autoplace_settings = mgs.autoplace_settings or {}
+	mgs.autoplace_settings["entity"] = mgs.autoplace_settings["entity"] or { settings = {} }
+	mgs.autoplace_settings["entity"].settings["mineral-sludge"] = mgs.autoplace_settings["entity"].settings["mineral-sludge"]
+		or {}
+end
 planet.map_gen_settings = mgs
 -- block elevated-rails
 if settings.startup["block-elevated-rails-on-deep-sea"].value then
