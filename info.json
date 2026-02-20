@@ -1,6 +1,6 @@
 {
     "name": "depths_of_nauvis",
-    "version": "0.8.0",
+    "version": "0.9.0",
     "title": "Depths of Nauvis",
     "author": "Talandar",
     "dependencies": [
@@ -10,7 +10,9 @@
         "? Krastorio2",
         "? Krastorio2-spaced-out",
         "talandar_cargo_ships_tweaks",
-        "cargo-ships"
+        "cargo-ships",
+        "wooden_platform",
+        "lighthouse_radar"
     ],
     "description": "Mod that changes Nauvis terrain and resource generation, to be more cargo ships oriented",
     "factorio_version": "2.0"
