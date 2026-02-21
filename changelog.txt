@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.1
+Date: 2026-02-21
+  Changelog:
+    - added diesel cargo ships as optional dependency
+    - added cargo crates as optional dependency
+    - added water spitters as optional dependency
+    - updated description to one that suggest that map is now made of continents
+---------------------------------------------------------------------------------------------------
 Version: 0.9.0
 Date: 2026-02-17
   Changelog:

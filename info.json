@@ -1,19 +1,22 @@
 {
     "name": "depths_of_nauvis",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "title": "Depths of Nauvis",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.0",
-        "? elevated-rails",
-        "? bztitanium",
-        "? Krastorio2",
-        "? Krastorio2-spaced-out",
         "talandar_cargo_ships_tweaks",
         "cargo-ships",
         "wooden_platform",
-        "lighthouse_radar"
+        "lighthouse_radar",
+        "? diesel_cargo_ships",
+        "? cargo_crates",
+        "? water_spitters",
+        "? elevated-rails",
+        "? bztitanium",
+        "? Krastorio2",
+        "? Krastorio2-spaced-out"
     ],
-    "description": "Mod that changes Nauvis terrain and resource generation, to be more cargo ships oriented",
+    "description": "Overhauls nauvis generation into a world of vast continents separated by oceans. Oil and uranium now appear as offshore deposits instead of traditional patches. These can be extracted using oil rigs.",
     "factorio_version": "2.0"
 }
