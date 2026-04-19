@@ -1,11 +1,12 @@
 {
     "name": "depths_of_nauvis",
-    "version": "0.9.1",
+    "version": "0.10.0",
     "title": "Depths of Nauvis",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.0",
         "talandar_cargo_ships_tweaks",
+        "deepsea_mechanic",
         "cargo-ships",
         "wooden_platform",
         "lighthouse_radar",

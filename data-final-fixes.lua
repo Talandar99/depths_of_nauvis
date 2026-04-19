@@ -56,30 +56,6 @@ if mods["Krastorio2-spaced-out"] or mods["Krastorio2"] then
 		or {}
 end
 planet.map_gen_settings = mgs
--- block elevated-rails
-if settings.startup["block-elevated-rails-on-deep-sea"].value then
-	if mods["elevated-rails"] then
-		data:extend({
-			{
-				type = "collision-layer",
-				name = "deepsea_mechanic",
-			},
-		})
-		data.raw["utility-constants"].default.default_collision_masks["rail-support"].layers["deepsea_mechanic"] = true
-		-- Add this collision layer to the "pelagos-deepsea" tile
-		local deepsea = data.raw.tile["deepwater"]
-		if deepsea then
-			-- Ensure the tile has a proper collision_mask structure
-			if not deepsea.collision_mask then
-				deepsea.collision_mask = { layers = {} }
-			elseif not deepsea.collision_mask.layers then
-				deepsea.collision_mask = { layers = deepsea.collision_mask }
-			end
-
-			deepsea.collision_mask.layers["deepsea_mechanic"] = true
-		end
-	end
-end
 
 local tech = data.raw.technology["uranium-mining"]
 if tech and tech.effects then

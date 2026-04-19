@@ -138,17 +138,6 @@ data:extend({
 	},
 })
 
-if settings.startup["deep-sea-mechanic"].value then
-	local landfill = data.raw.item["landfill"]
-
-	if landfill and landfill.place_as_tile and landfill.place_as_tile.tile_condition then
-		for i = #landfill.place_as_tile.tile_condition, 1, -1 do
-			if landfill.place_as_tile.tile_condition[i] == "deepwater" then
-				table.remove(landfill.place_as_tile.tile_condition, i)
-			end
-		end
-	end
-end
 -- change research to regulat research trigger
 data.raw["technology"]["oil-processing"].unit = {
 	count = 100,
