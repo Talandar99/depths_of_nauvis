@@ -4,6 +4,7 @@ Date: 2026-04-19
   Changelog:
     - moved deepsea mechanic into separate mod.
     - deepsea_mechanic is now mandatory dependency.
+    - elevated rails setting was removed 
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.1
 Date: 2026-02-21
