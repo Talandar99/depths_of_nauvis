@@ -303,7 +303,7 @@ if mods["Krastorio2-spaced-out"] or mods["Krastorio2"] then
 	})
 
 	--------------------- tech
-	local tech = data.raw.technology["silicon-processing"]
+	local tech = data.raw.technology["kr-silicon-processing"]
 	if tech and tech.effects then
 		table.insert(tech.effects, {
 			type = "unlock-recipe",
