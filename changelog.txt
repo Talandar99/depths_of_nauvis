@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.11.0
+Date: 2026-06-21
+  Changelog:
+    - You can now use steel barrels to transport titanium sludge
+---------------------------------------------------------------------------------------------------
 Version: 0.10.1
 Date: 2026-05-20
   Changelog:
@@ -41,7 +46,7 @@ Date: 2026-01-14
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.1
 Date: 2026-01-09
-    Bugfixes:
+  Bugfixes:
     - uranium sludge processing should now be present in uranium processing if Krastorio 2 Spaced Out Is installed
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.0

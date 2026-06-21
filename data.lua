@@ -13,7 +13,7 @@ data:extend({
 		order = "a[fluid]-b[uranium-sludge]",
 		pressure_to_speed_ratio = 0.4,
 		flow_to_energy_ratio = 0.59,
-		auto_barrel = false,
+		auto_barrel = true,
 		auto_titanium_barrel = true,
 		fuel_value = "0.15MJ",
 	},
