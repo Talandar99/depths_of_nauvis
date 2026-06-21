@@ -2,7 +2,7 @@
 Version: 0.11.0
 Date: 2026-06-21
   Changelog:
-    - You can now use steel barrels to transport titanium sludge
+    - You can now use steel barrels to transport uranium sludge
 ---------------------------------------------------------------------------------------------------
 Version: 0.10.1
 Date: 2026-05-20
